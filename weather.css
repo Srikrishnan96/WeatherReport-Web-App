@@ -1,0 +1,51 @@
+.grey-jumbo {
+    margin-top: -30px;
+    border-radius: 0px !important;
+    height: 500px;
+    color: #fff;
+    background-size: cover;
+    /* background-color: #42a5f5; */
+}
+hr.short {
+    width: 100px;
+    border-bottom: 2px solid #fff;
+}
+hr.below {
+    width: 50px;
+    border-bottom: 2px solid #fff;
+}
+.top {
+    background: linear-gradient(145deg, #0d47a1, #42a5f5);
+    color: #fff;
+    border-radius: 0px !important;
+    height: 300px;
+}
+#info1, #info2 {
+    font-size: 30x;
+}
+#info3 {
+    font-size: 50px;
+}
+body,html {
+    height: 100%;
+    margin: 0;
+}
+.jumbotron {
+  opacity: 0.5;
+}
+.loading-page {
+    background-color: #42a5f5;
+    height: 100%;
+    width: 100%;
+}
+.horizontal {
+    border-top: 1px solid #A9A9A9;
+}
+.spinner {
+    position: relative;
+    display: block;
+    top: 45%;
+}
+.weather-content {
+    display: none;
+}

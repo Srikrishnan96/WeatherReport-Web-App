@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Animate.css D -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="weather.css">
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    
+    <div class="loading-page">
+
+        <div class="row px-3 text-center spinner">
+            <div class="col-sm-12">
+                    <div class="spinner-grow" role="status">
+                            <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow" role="status">
+                            <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow" role="status">
+                            <span class="sr-only">Loading...</span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="container-fluid pt-3 weather-content">
+            <div class="row px-5 text-center">
+                <div class="col-sm-12 jumbotron" id="weather-head">
+                    <h2 class="date-day"></h2>
+                    <hr class="short">
+                    <h3 id="weather"></h3>
+                </div>
+            </div>
+
+            <div class="weather-message text-center text-white">
+                <h2><span class="weather-message-text text-center"></span></h2><hr class="horizontal">
+            </div>
+
+            <div class="row mt-5 weather-info text-white">
+                    <div class="col-sm-4 text-center">
+                      <h3 id="info1"></h3>
+                      <hr class="short">
+                      <h3 id="info2" class="mt-3"></h3>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h3 id="info3"></h3>
+                        <hr class="short">
+                        <button id="switch" class="btn btn-primary mt-3">Celcius</button>
+                      </div>
+                      <div class="col-sm-4 text-center">
+                        <h3 id="info5"></h3>
+                        <hr class="short">
+                        <h3 id="info6" class="mt-3"></h3>
+                      </div>
+              </div>
+        </div>
+               
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
