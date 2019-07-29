@@ -1,6 +1,6 @@
 function timeUpdate() {
     var date = new Date();
-    var time = `Time ${date.getHours()}:${(new Date()).getMinutes()<10?'0':''}${date.getMinutes()}`
+    var time = `Time ${date.getHours()<10?'0':''}${date.getHours()}:${(new Date()).getMinutes()<10?'0':''}${date.getMinutes()}`
     $('#info1').html(time);
 }
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
                     var { current: { cloud, humidity, temp_c, temp_f, wind_mph  }, location: { localtime, name, region } } = data;
                     var time = data.location.localtime.split(' ')[1];
-
+                    console.log(date.getHours()<10?0:1)
                     $('#weather').html(`${name}, ${region}`);
                     $('.date-day').html(`${day}day, ${month} ${date.getDate()}`);
                     $('#info1').html(`Time ${date.getHours()<10?'0':''}${date.getHours()}:${date.getMinutes()<10?'0':''}${date.getMinutes()}`);
